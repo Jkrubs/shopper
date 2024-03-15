@@ -11,3 +11,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.title{
+  display: inline-block;
+  margin-bottom: 50px;
+  
+}
+
+.title h2::after{
+  content: '';
+  width: 50%;
+  height: 2px;
+  border-radius: 1px;
+  background: #111;
+  margin: auto;
+  display: block;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popular{
+  height: 100vh;
+  margin: 50px 0;
+}
+@media(max-width:600px){
+  .popular{
+    height: fit-content;
+  }
+}

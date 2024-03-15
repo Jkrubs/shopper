@@ -1,0 +1,130 @@
+.navbar{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.logo img{
+    width: 40px;
+    margin-right: 10px;
+}
+.logo h2{
+    font-size: 20px;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.login button{
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+}
+
+.login img{
+    width: 30px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.counter{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    font-size: 14px;
+    background-color: red;
+    color: #fff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 7px;
+    right: 60px;
+}
+
+.menu{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 1;
+    
+
+}
+
+.menu ul li {
+    display: flex;
+    list-style: none;
+    font-weight: 600;
+    position: relative;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #111;
+}
+
+.after{
+    background: orangered;
+    height: 2px;
+    border: 0;
+    outline: none;
+}
+
+@media(max-width:1200px){
+    .counter{
+       top: 25px;
+    }
+    .menu{
+        width: 450px;
+    }
+}
+
+@media(max-width:800px){
+    .menu{
+        width: 200px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background:#ff4141;
+        flex-direction: column;
+        z-index: 2;
+        align-items: flex-start;
+        justify-content:start ;
+        gap: 50px;
+        text-align: start;
+        display: none;
+
+    }
+    .menu ul , .menu ul li a{
+        flex-direction: column;
+        text-align: start;
+        justify-content: start;
+        align-items: start;
+        color:#fff;
+    }
+    .menu ul li{
+        padding-left: 10px;
+        padding-block: 20px;
+    }
+}

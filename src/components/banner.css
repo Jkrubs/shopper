@@ -1,0 +1,24 @@
+.banner{
+    width: 90%;
+    margin: auto;
+    height: 60vh;
+    background:linear-gradient(180deg, #fde1ff 0%,#e1ffea22 60%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.banner .image img{
+    width: 200px;
+}
+
+@media(max-width:600px){
+    .banner{
+        background: radial-gradient(#fff,rgb(235, 135, 135));
+        height: 30vh;
+    }
+    .banner .image img{
+        width: 100px;
+    }
+}

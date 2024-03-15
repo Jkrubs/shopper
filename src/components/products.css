@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.lineup{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.products{
+    width: 24%;
+}
+
+.products img{
+    width: 100%;
+}
+
+.products h5{
+    margin: 10px 0px;
+}
+
+.products span{
+    color: #999;
+    margin-left: 20px;
+    text-decoration: line-through;
+    font-weight: normal;
+}
+
+.products:hover{
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+
+
+@media(max-width:600px){
+    .products{
+        width: 48%;
+    }
+}

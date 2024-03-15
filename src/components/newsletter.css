@@ -1,0 +1,50 @@
+.alsobanner{
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 15px;
+}
+.sub{
+    display: flex;
+    width: 500px;
+}
+
+.sub input{
+    flex: 1;
+    height: 30px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    padding-left: 5px;
+    position: relative;
+}
+
+.sub button{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    border-radius: 15px;
+    right: 350px;
+    position: absolute;
+}
+
+@media(max-width:600px){
+    .sub{
+        width: 80%;
+        margin:0 auto;
+    }
+    .sub button{
+        right: 50px;
+        width: 150px;
+        font-size: 12px;
+    }
+    .alsobanner{
+        justify-content: center;
+    }
+    .alsobanner h1{
+        font-size: 18px;
+    }
+}
