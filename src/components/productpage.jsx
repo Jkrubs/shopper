@@ -3,7 +3,6 @@ import { useParams } from 'react-router'
 import { ShopContext } from './shopcontext'
 import { Item } from './item'
 import { Breadcrum } from './breadcrum'
-
 export const Productpage = () => {
     const{id}=useParams()
     const{all_data}=useContext(ShopContext)
@@ -12,6 +11,7 @@ export const Productpage = () => {
     <div>
         <Breadcrum product={product}/>
         <Item product={all_data.filter((e)=>e.id===Number(id))}/>
+        {window.scrollTo(0,0)}
     </div>
   )
 }

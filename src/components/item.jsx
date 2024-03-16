@@ -3,10 +3,14 @@ import './item.css'
  import star_icon from './Assets/star_icon.png'
  import dull_star from './Assets/star_dull_icon.png'
 import { ShopContext } from './shopcontext'
+import { useNavigate } from 'react-router'
 export const Item = (props) => {
    const product=props.product
    const{addToCart}=useContext(ShopContext)
-
+    const navigate=useNavigate()
+    function handleClick(){
+        navigate("/cart")
+    }
   return (
     <div className='pro-page'>
         {
@@ -45,7 +49,7 @@ export const Item = (props) => {
                             <div>XXXL</div>
                             
                         </div>
-                        <button onClick={ ()=>{addToCart(item.id); alert("fuck")}}>ADD TO CART</button>
+                        <button onClick={ ()=>{addToCart(item.id);handleClick()}}>ADD TO CART</button>
                         <h5><span>Category:</span> Nike - unisex</h5>
                         <h5><span>Tags:</span> Modern - latest</h5>
                     </div>

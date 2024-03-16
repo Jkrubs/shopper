@@ -38,3 +38,11 @@
     outline: none;
     border: 0;
 }
+
+
+@media(max-width:600px){
+    .shopcategory{
+        padding-top: 70px;
+    }
+
+}
