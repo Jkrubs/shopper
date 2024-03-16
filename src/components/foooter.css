@@ -37,3 +37,9 @@
     border: 0;
     outline: none;
 }
+
+@media (max-width:600px){
+    .list{
+        width: 300px;
+    }
+}

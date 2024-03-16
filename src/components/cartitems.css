@@ -1,5 +1,7 @@
 .cartItems{
-    margin: 100px;
+    height: 100vh;
+    margin: 0px 100px;
+    padding-top: 70px;
 }
 
 .cartItems hr{
@@ -67,4 +69,15 @@
     margin: 15px 0px;
     cursor: pointer;
     
+}
+
+@media(max-width:600px){
+    .cartItems{
+        margin: 0px ;
+        
+    }
+    .cart-total-down{
+        width:80%;
+        margin: auto;
+    }
 }

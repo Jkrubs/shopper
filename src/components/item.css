@@ -95,4 +95,33 @@
     color:#212121;
 }
 
+@media(max-width:600px){
+    .pro-page{
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        height: fit-content;
+    }
+    .product-item{
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .product-display{
+        order: 2;
+        display: inline-flex;
+        display: none;
+    }
 
+    .txt{
+        max-width: 300px;
+        
+    }
+
+    .product-item img{
+        margin-right: 0;
+    }
+    .txt h1{
+       font-size: 16px; 
+    }
+}

@@ -37,6 +37,7 @@
     font-weight: bold;
 }
 
+
 .image{
     margin-right: 100px;
     max-width:400px;
@@ -72,20 +73,31 @@
 
  @media (max-width:600px){
     .text h1{
-        font-size: 22px;
+        font-size: 16px;
+        margin-bottom: 20px;
     }
     .hero-btn{
-        width: 150px;
+        width: 100px;
         padding: 0px;
-        font-size: 12px;
+        font-size: 10px;
     }
     .text h1 img{
         width: 20px;
     }
-    .text h1{
-        margin-bottom: 10px;
-    }
     .text h4{
-        font-size: 13px;
+        font-size: 8px;
+        font-weight: bold;
+    }
+    .image{
+        width: 270px;
+        margin-right: 20px;
+    }
+    .text{
+        max-width: 230px;
+        margin-left: 50px;
+    }
+    .hero-btn img{
+        width: 5px;
+        display: none;
     }
  }

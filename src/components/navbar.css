@@ -4,12 +4,30 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+}
+
+.darknav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background: #ff4141;
 }
 
 .logo{
     display: flex;
     align-items: center;
     margin-left: 50px;
+}
+.icon i{
+    width: 40px;
+    color: #fff;
+    display:none;
 }
 
 .logo img{
@@ -116,6 +134,20 @@
         display: none;
 
     }
+    .shownav{
+        width: 200px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background:#ff4141;
+        flex-direction: column;
+        z-index: 2;
+        align-items: flex-start;
+        justify-content:start ;
+        gap: 50px;
+        text-align: start;
+        display: block;
+    }
     .menu ul , .menu ul li a{
         flex-direction: column;
         text-align: start;
@@ -126,5 +158,84 @@
     .menu ul li{
         padding-left: 10px;
         padding-block: 20px;
+    }
+    .counter{
+        right: 10px;
+        top:8px ;
+    }
+}
+
+@media(max-width:600px){
+    .counter{
+        right: 16px;
+        top: 16px;
+    }
+
+    .login button{
+        width: 70px;
+    }
+    .logo h2{
+        font-size: 16px;
+    }
+    .logo img{
+        width: 32px;
+    }
+
+    .login{
+        margin-right: 20px;
+    }
+
+    .icon i{
+        display: block;
+        width: 40px;
+        color: #fff;
+        margin-left: 30px;
+        z-index: 100;
+
+    }
+    .menu{
+        width: 200px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background:#ff4141;
+        flex-direction: column;
+        z-index: 2;
+        align-items: flex-start;
+        justify-content:start ;
+        gap: 50px;
+        text-align: start;
+        display: none;
+
+    }
+    .shownav{
+        width: 200px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background:#ff4141;
+        flex-direction: column;
+        z-index: 2;
+        align-items: flex-start;
+        justify-content:start ;
+        gap: 50px;
+        text-align: start;
+        display: block;
+    }
+    .shownav ul , .shownav ul li a{
+        flex-direction: column;
+        text-align: start;
+        justify-content: start;
+        align-items: start;
+        color:#fff;
+        text-decoration: none;
+    }
+    .shownav ul li{
+        padding-left: 10px;
+        padding-block: 20px;
+        list-style: none;
+    }
+    .icon{
+        z-index: 10;
     }
 }
